@@ -7,9 +7,20 @@ const HomePage =()=>{
     return(
         <Layout>
         {error &&<span>{alert (error)}</span>}
-            {loading?(<Spinner/> ):(
+            {loading?(
+             <Spinner/> 
+             ):(
                 <>
-                <h1> HomePage Page </h1>
+                  <h4 
+                    className="ms-4"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#staticBackdrop"
+                     style={{cursor:"pointer"}}
+                   >
+                     <i classNamw="fa-solid fa-plus text-success py-4"></i>
+                      Add Inventory
+                  </h4>  
+                     <Modal/>  
                 </>
             )}
 
