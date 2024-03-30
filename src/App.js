@@ -22,6 +22,13 @@ function App() {
        
         
         }/>
+        <Route path='/consumer' element ={
+        <ProtectedRoute>
+           <Hospitals/>
+        </ProtectedRoute>
+       
+        
+        }/>
         <Route path='/organisation' element ={
         <ProtectedRoute>
            <OrganisationPage/>
