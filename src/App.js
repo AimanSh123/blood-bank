@@ -9,6 +9,7 @@ import PublicRoute from './components/Routes/PublicRoute';
 import Donar from "./pages/Dashboard/Donar";
 import Hospitals from "./pages/Dashboard/Hospitals";
 import OrganisationPage from './pages/Dashboard/OrganisationPage';
+import Consumer from './pages/Dashboard/Consumer';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
         }/>
         <Route path='/consumer' element ={
         <ProtectedRoute>
-           <Hospitals/>
+           <Consumer/>
         </ProtectedRoute>
        
         
